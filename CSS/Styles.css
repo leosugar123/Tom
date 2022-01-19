@@ -1,0 +1,119 @@
+.sg-even-row td, .sg-even-row th, .sg-odd-row td, .sg-odd-row th, .sg-header-row-first {
+background-color: #CCCCCC;
+}
+
+.containerA {
+  display: grid;  
+  background-color: #ADDC68;  
+  grid-gap: 5px;
+  padding:5px;
+  grid:
+      "header header header header"      
+      "sidebar sidebar sidebar sidebar"
+      "content-2 content-2 content-2 content-1 "   
+      "content-2 content-2 content-2 content-1"
+      "content-2 content-2 content-2 content-1";
+}
+.containerA > div{
+ 
+ text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.containerB {
+  display: grid;  
+  background-color: #ADDC68;  
+  grid-gap: 5px;
+  padding:5px;
+  grid:
+      "header header header header"      
+      "sidebar sidebar sidebar sidebar"
+      "content-2 content-2 content-1 content-1 "   
+      "content-2 content-2 content-1 content-1"
+      "content-2 content-2 content-1 content-1";
+}
+.containerB > div{
+ 
+ text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.containerC {
+  display: grid;  
+  background-color: #ADDC68;  
+  grid-gap: 5px;
+  padding:5px;
+  grid:
+      "header header header header"      
+      "sidebar sidebar sidebar sidebar"
+      "content-2 content-1 content-1 content-1 "   
+      "content-2 content-1 content-1 content-1"
+      "content-2 content-1 content-1 content-1";
+}
+.containerC > div{
+ 
+ text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ADDC68;
+  font-family: "lato", sans-serif;
+}
+.containerA > * {
+  border: 1px solid black;
+}
+.containerB > * {
+  border: 1px solid black;
+}
+.containerC > * {
+  border: 1px solid black;
+  
+}
+.header {
+  grid-area: header;
+   background-color: #ADDC68;
+  color:black;
+  position:relative;
+  left:10px;
+  padding-right: -90000px;
+  
+}
+.logo{
+   grid-area: logo;
+   background-color: grey;  
+  position:relative;
+  left:10px;  
+}
+.sidebar{
+    grid-area: sidebar;
+     color:black;
+    position:relative;
+    left:10px;
+    background-color:#017EFA;
+}
+.content-1 {
+  grid-area: content-1;
+  position:relative;
+  left:10px;  
+  background-color:#ADDC68;
+}
+
+.content-2 {
+  grid-area: content-2;
+   position:relative;
+  left:10px; 
+  background-color:#ADDC68;
+}
+
+.content-3 {
+  grid-area: content-3;
+   position:relative;
+  left:10px; 
+  background-color:#ADDC68;
+}
+
